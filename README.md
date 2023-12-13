@@ -1,5 +1,5 @@
 # luci-app-oled
 
-Forked from https://github.com/NateLol/luci-app-oled/issues/10#issuecomment-922245476.
+Forked from https://github.com/NateLol/luci-app-oled/
 
-Tweaks specifically for 52pi CM4 Router board.  Enable OLED and eth1 OOB
+Tweaks specifically for 52pi CM4 Router board, fixes i2c default device issue, enables menu and service by default.
