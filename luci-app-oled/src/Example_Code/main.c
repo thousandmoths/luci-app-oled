@@ -378,7 +378,7 @@ int main(int argc, char *argv[]) {
 	sprintf(stcfg->scroll_text, "Hello");
 
 	stcfg->i2c_dev_path = malloc(sizeof(char) * 20);
-	sprintf(stcfg->i2c_dev_path, "%s", I2C_DEV0_PATH);
+	sprintf(stcfg->i2c_dev_path, "%s", I2C_DEV1_PATH);
 	/* The end of set default value for config */
 
 	while ((option = getopt_long(argc, argv,
@@ -499,7 +499,7 @@ int main(int argc, char *argv[]) {
 	}
 
 	if (stcfg->i2c_dev_path == NULL)
-		sprintf(stcfg->i2c_dev_path, "%s", I2C_DEV0_PATH);
+		sprintf(stcfg->i2c_dev_path, "%s", I2C_DEV1_PATH);
 
 	/* Initialize I2C bus and connect to the I2C Device */
 	if (init_i2c_dev(stcfg->i2c_dev_path, SSD1306_OLED_ADDR) == 0) {
